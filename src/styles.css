@@ -17,8 +17,13 @@ body {
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
 }
+
 .grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
 }
 .card {
   background: white;
@@ -136,9 +141,7 @@ main p {
   object-fit: cover;
   display: block;
 }
-.grid-3-columns {
-  grid-template-columns: 1fr 1fr 1fr;
-}
+
 footer {
   color: white;
   background-image: linear-gradient(
@@ -199,5 +202,11 @@ footer a {
 
   section {
     padding: 30px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16 / 9;
   }
 }
